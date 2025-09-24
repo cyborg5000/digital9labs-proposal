@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solution Overview Slide</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f0f2f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: 'Poppins', 'Helvetica Neue', Arial, sans-serif;
+    }
+
+    .slide {
+      width: 1280px;
+      height: 720px;
+      background-color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      padding: 40px 60px;
+      box-sizing: border-box;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .header {
+      text-align: center;
+      width: 100%;
+    }
+
+    .title {
+      font-size: 48px;
+      font-weight: 700;
+      color: #3b82f6;
+      margin: 0;
+      line-height: 1.2;
+    }
+
+    .subtitle {
+      font-size: 22px;
+      font-weight: 400;
+      color: #4a5568;
+      margin: 10px 0 0 0;
+    }
+
+    .main-content {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-grow: 1;
+      padding: 20px 0;
+    }
+
+    .pillar-column {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      height: 100%;
+      width: 25%;
+    }
+
+    .pillar-column.left {
+      align-items: flex-end;
+      text-align: right;
+    }
+
+    .pillar-column.right {
+      align-items: flex-start;
+      text-align: left;
+    }
+    
+    .pillar {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin: 20px 0;
+      transition: transform 0.3s ease;
+    }
+    
+    .pillar:hover {
+        transform: scale(1.05);
+    }
+    
+    .pillar-column.left .pillar {
+        flex-direction: row-reverse;
+    }
+
+    .pillar-icon {
+        flex-shrink: 0;
+    }
+
+    .pillar-text h3 {
+      font-size: 18px;
+      font-weight: 600;
+      color: #1a202c;
+      margin: 0;
+    }
+
+    .pillar-text p {
+      font-size: 15px;
+      color: #718096;
+      margin: 4px 0 0 0;
+    }
+
+    .central-image-container {
+      flex-shrink: 0;
+      margin: 0 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .central-image {
+      max-width: 400px;
+      max-height: 400px;
+      object-fit: contain;
+    }
+
+    .footer {
+      width: 100%;
+      text-align: center;
+      padding: 10px 0;
+      border-top: 2px solid #e2e8f0;
+      margin-top: 20px;
+    }
+    
+    .value-proposition {
+      font-size: 20px;
+      font-weight: 600;
+      color: #10b981;
+      margin: 10px 0;
+    }
+
+    .call-out {
+      font-size: 16px;
+      font-weight: 400;
+      color: #4a5568;
+      background-color: #f0f8ff;
+      padding: 8px 16px;
+      border-radius: 20px;
+      display: inline-block;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="slide">
+
+    <div class="header">
+      <h1 class="title">Your Complete Business Transformation Solution</h1>
+      <p class="subtitle">One integrated platform that connects every aspect of your business</p>
+    </div>
+
+    <div class="main-content">
+      <div class="pillar-column left">
+        <div class="pillar">
+          <div class="pillar-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="11" fill="#10b981" fill-opacity="0.1"/>
+              <path d="M9 12.5L11 14.5L15 10.5" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="pillar-text">
+            <h3>Customer Management</h3>
+            <p>Centralized contact database</p>
+          </div>
+        </div>
+        <div class="pillar">
+          <div class="pillar-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="11" fill="#10b981" fill-opacity="0.1"/>
+              <path d="M9 12.5L11 14.5L15 10.5" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="pillar-text">
+            <h3>Sales Automation</h3>
+            <p>Pipeline tracking and follow-ups</p>
+          </div>
+        </div>
+        <div class="pillar">
+          <div class="pillar-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="11" fill="#10b981" fill-opacity="0.1"/>
+              <path d="M9 12.5L11 14.5L15 10.5" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="pillar-text">
+            <h3>Financial Integration</h3>
+            <p>Quotes, invoices, and payments</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="central-image-container">
+        <img src="images/crm-automation-ecosystem-diagram.jpg" alt="CRM Automation Ecosystem Diagram" class="central-image">
+      </div>
+
+      <div class="pillar-column right">
+        <div class="pillar">
+          <div class="pillar-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="11" fill="#10b981" fill-opacity="0.1"/>
+              <path d="M9 12.5L11 14.5L15 10.5" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="pillar-text">
+            <h3>Project Coordination</h3>
+            <p>Task and resource management</p>
+          </div>
+        </div>
+        <div class="pillar">
+          <div class="pillar-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="11" fill="#10b981" fill-opacity="0.1"/>
+              <path d="M9 12.5L11 14.5L15 10.5" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="pillar-text">
+            <h3>Document System</h3>
+            <p>Centralized file management</p>
+          </div>
+        </div>
+        <div class="pillar">
+          <div class="pillar-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="11" fill="#10b981" fill-opacity="0.1"/>
+              <path d="M9 12.5L11 14.5L15 10.5" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="pillar-text">
+            <h3>Advanced Analytics</h3>
+            <p>Data-driven insights</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p class="value-proposition">Transform manual processes into automated workflows</p>
+      <p class="call-out">Designed specifically for SME growth and scalability</p>
+    </div>
+
+  </div>
+</body>
+</html>

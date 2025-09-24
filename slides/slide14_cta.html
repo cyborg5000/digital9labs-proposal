@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1280, height=720">
+  <title>Ready to Transform Your SME?</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap');
+    body {
+      margin: 0;
+      padding: 0;
+      width: 1280px;
+      height: 720px;
+      background-color: #ffffff;
+      font-family: 'Inter', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+    .slide-container {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      box-sizing: border-box;
+      padding: 40px 80px 0 80px;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      width: 100%;
+      margin-bottom: 40px;
+    }
+    .header-text h1 {
+      font-size: 52px;
+      font-weight: 800;
+      color: #ea580c;
+      margin: 0;
+      line-height: 1.2;
+    }
+    .header-text p {
+      font-size: 18px;
+      color: #4b5563;
+      margin: 10px 0 0 0;
+    }
+    .partnership {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 16px;
+      font-weight: 500;
+      color: #4b5563;
+      margin-top: 10px;
+    }
+    .partnership img {
+      height: 32px;
+    }
+    .main-content {
+      display: flex;
+      flex-grow: 1;
+      gap: 40px;
+      width: 100%;
+    }
+    .steps-section {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .step-card {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      padding: 20px;
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      background-color: #f9fafb;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+    }
+    .step-number {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 36px;
+      height: 36px;
+      min-width: 36px;
+      border-radius: 50%;
+      background-color: #ea580c;
+      color: #ffffff;
+      font-size: 20px;
+      font-weight: 700;
+    }
+    .step-details h3 {
+      font-size: 18px;
+      font-weight: 700;
+      color: #111827;
+      margin: 0 0 5px 0;
+    }
+    .step-details p {
+      font-size: 15px;
+      color: #4b5563;
+      margin: 0;
+      line-height: 1.5;
+    }
+    .cta-section {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .cta-box {
+      padding: 24px;
+      background-color: #fffbeb;
+      border: 1px solid #fde68a;
+      border-radius: 12px;
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.07), 0 4px 6px -4px rgba(0, 0, 0, 0.07);
+    }
+    .cta-box h2 {
+      font-size: 20px;
+      font-weight: 700;
+      text-align: center;
+      color: #1f2937;
+      margin: 0 0 20px 0;
+    }
+    .cta-box ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 24px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .cta-box li {
+      font-size: 16px;
+      color: #374151;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .checkmark {
+      color: #059669;
+      font-weight: 700;
+      font-size: 20px;
+    }
+    .cta-button {
+      width: 100%;
+      padding: 16px 0;
+      font-size: 20px;
+      font-weight: 700;
+      color: #ffffff;
+      background-color: #ea580c;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 0 4px 14px 0 rgba(234, 88, 12, 0.39);
+      transition: background-color 0.3s ease;
+    }
+    .cta-button:hover {
+      background-color: #d9510b;
+    }
+    .contact-info {
+      margin-top: 20px;
+      text-align: right;
+      font-size: 14px;
+      line-height: 1.6;
+      color: #4b5563;
+    }
+    .contact-info strong {
+        color: #1f2937;
+    }
+    .footer-banner {
+      display: flex;
+      align-items: center;
+      width: 1280px;
+      height: 50px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background-color: #1f2937;
+      color: #d1d5db;
+      font-size: 13px;
+      font-weight: 500;
+    }
+    .limited-tag {
+      background-color: #dc2626;
+      color: #ffffff;
+      padding: 0 20px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      font-weight: 700;
+      margin-right: 30px;
+    }
+    .banner-content {
+      display: flex;
+      justify-content: space-between;
+      flex-grow: 1;
+      padding-right: 80px;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide-container">
+    <div class="header">
+      <div class="header-text">
+        <h1>Ready to Transform Your SME?</h1>
+        <p>Take the first step toward business digitalization today</p>
+      </div>
+      <div class="partnership">
+        <img src="images/crm_presentation_8.jpg" alt="Partnership Handshake Icon">
+        <p>Partnership Handshake</p>
+      </div>
+    </div>
+
+    <div class="main-content">
+      <div class="steps-section">
+        <div class="step-card">
+          <div class="step-number">1</div>
+          <div class="step-details">
+            <h3>Sign Up (2 minutes)</h3>
+            <p>Quick registration with business details for instant platform access.</p>
+          </div>
+        </div>
+        <div class="step-card">
+          <div class="step-number">2</div>
+          <div class="step-details">
+            <h3>Schedule Onboarding (15 minutes)</h3>
+            <p>Personal demo and custom workflow configuration with our experts.</p>
+          </div>
+        </div>
+        <div class="step-card">
+          <div class="step-number">3</div>
+          <div class="step-details">
+            <h3>Start Growing (Day 1)</h3>
+            <p>Import your existing data and begin automating your critical business processes.</p>
+          </div>
+        </div>
+      </div>
+      <div class="cta-section">
+        <div class="cta-box">
+          <h2>START YOUR FREE 30-DAY TRIAL</h2>
+          <ul>
+            <li><strong class="checkmark">✓</strong> No credit card required</li>
+            <li><strong class="checkmark">✓</strong> Full access to all features</li>
+            <li><strong class="checkmark">✓</strong> Personal onboarding session included</li>
+          </ul>
+          <button class="cta-button">Start Free Trial Now</button>
+        </div>
+        <div class="contact-info">
+          <p><strong>Live Demo:</strong> Schedule a personal demonstration<br>
+          <strong>WhatsApp:</strong> +65 88911968<br>
+          <strong>Email:</strong> hello@digital9labs.com</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-banner">
+    <div class="limited-tag">Limited Time</div>
+    <div class="banner-content">
+      <p>Free data migration (worth $500)</p>
+      <p>Join 500+ SMEs growing 40% faster</p>
+      <p>Average setup time: <strong>Just 3 days</strong></p>
+      <p>30-day money-back guarantee • Cancel anytime</p>
+    </div>
+  </div>
+
+</body>
+</html>

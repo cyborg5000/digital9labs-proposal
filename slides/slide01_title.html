@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRM SaaS Title Slide</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100vw;
+      height: 100vh;
+      background-color: #f0f0f0;
+      font-family: 'Poppins', 'Helvetica Neue', Arial, sans-serif;
+    }
+
+    .slide {
+      width: 1280px;
+      height: 720px;
+      background: linear-gradient(135deg, #1a365d 0%, #2d5e8b 100%);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
+    
+    .logo-placeholder {
+        position: absolute;
+        top: 40px;
+        left: 50px;
+        font-size: 22px;
+        font-weight: 500;
+        color: #ffffff;
+        opacity: 0.8;
+        letter-spacing: 1px;
+    }
+
+    .content-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 0 60px;
+      animation: content-fade-in 1.5s ease-out forwards;
+    }
+
+    @keyframes content-fade-in {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .main-title {
+      font-size: 72px;
+      font-weight: 700;
+      color: #ffffff;
+      margin: 0;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+      line-height: 1.2;
+    }
+
+    .subtitle {
+      font-size: 28px;
+      font-weight: 400;
+      color: #ffffff;
+      opacity: 0.95;
+      margin: 25px 0 30px 0;
+      max-width: 800px;
+    }
+    
+    .divider {
+        width: 100px;
+        height: 4px;
+        background-color: #2d5e8b;
+        margin-bottom: 30px;
+        border-radius: 2px;
+    }
+
+    .value-prop {
+      font-size: 22px;
+      font-weight: 300;
+      color: #ffffff;
+      opacity: 0.9;
+      letter-spacing: 0.5px;
+      margin: 0;
+    }
+
+    .footer-container {
+      position: absolute;
+      bottom: 40px;
+      left: 0;
+      right: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .footer-text {
+      font-size: 24px;
+      font-weight: 500;
+      color: #f59e0b;
+      margin: 0 0 10px 0;
+    }
+
+    .attribution {
+      font-size: 14px;
+      font-weight: 300;
+      color: #ffffff;
+      opacity: 0.6;
+      margin: 0;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="logo-placeholder">
+        Digital9 Labs
+    </div>
+    
+    <div class="content-container">
+        <h1 class="main-title">Transform Your SME with AI-Powered CRM</h1>
+        <p class="subtitle">Complete Business Management Platform for Growing Companies</p>
+        <div class="divider"></div>
+        <p class="value-prop">Sales • Finance • Projects • Documents - All in One</p>
+    </div>
+
+    <div class="footer-container">
+        <p class="footer-text">Digitalize Your Business Operations Today</p>
+        <p class="attribution">For scheduling a live demo, WhatsApp: +65 88911968</p>
+    </div>
+  </div>
+</body>
+</html>

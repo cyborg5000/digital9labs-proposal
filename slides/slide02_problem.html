@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The SME Digital Challenge</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #f0f2f5;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .slide {
+      width: 1280px;
+      height: 720px;
+      background-color: #ffffff;
+      font-family: 'Poppins', 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+      display: flex;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .left-column {
+      flex: 0 0 58%;
+      padding: 60px 40px 60px 70px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .right-column {
+      flex: 0 0 42%;
+      background: linear-gradient(to right, #ffffff, #f8fafc);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px;
+      position: relative;
+    }
+
+    .slide h1 {
+      font-size: 48px;
+      color: #374151;
+      font-weight: 700;
+      margin: 0 0 25px 0;
+      line-height: 1.2;
+    }
+    
+    .problem-statement-container {
+      margin-bottom: 15px;
+    }
+
+    .problem-statement {
+      font-size: 20px;
+      color: #dc2626;
+      font-weight: 600;
+      margin: 0;
+      padding-left: 20px;
+      border-left: 4px solid #dc2626;
+    }
+
+    .progress-bar-container {
+      width: 100%;
+      max-width: 500px;
+      height: 10px;
+      background-color: #e5e7eb;
+      border-radius: 5px;
+      margin-top: 10px;
+      margin-bottom: 40px;
+    }
+
+    .progress-bar-fill {
+      width: 75%;
+      height: 100%;
+      background-color: #dc2626;
+      border-radius: 5px;
+    }
+
+    .pain-points-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 30px 0;
+    }
+
+    .pain-points-list li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      font-size: 17px;
+      color: #374151;
+      animation: fadeInUp 0.5s ease-out forwards;
+      opacity: 0;
+    }
+    
+    .pain-points-list li:nth-child(1) { animation-delay: 0.1s; }
+    .pain-points-list li:nth-child(2) { animation-delay: 0.2s; }
+    .pain-points-list li:nth-child(3) { animation-delay: 0.3s; }
+    .pain-points-list li:nth-child(4) { animation-delay: 0.4s; }
+    .pain-points-list li:nth-child(5) { animation-delay: 0.5s; }
+    .pain-points-list li:nth-child(6) { animation-delay: 0.6s; }
+
+
+    .icon-wrapper {
+      width: 24px;
+      height: 24px;
+      min-width: 24px;
+      background-color: #fee2e2;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 15px;
+    }
+
+    .icon-symbol {
+      color: #dc2626;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 1;
+    }
+
+    .impact-statement {
+      margin-top: auto;
+      padding: 10px 15px;
+      background-color: #f3f4f6;
+      border-left: 4px solid #dc2626;
+    }
+
+    .impact-statement p {
+      margin: 0;
+      color: #374151;
+      font-size: 16px;
+      font-style: italic;
+    }
+    
+    .right-column img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      opacity: 0.6;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="left-column">
+      <div>
+        <h1>The SME Digital Challenge</h1>
+        <div class="problem-statement-container">
+          <p class="problem-statement">'75% of SMEs struggle with fragmented business processes'</p>
+          <div class="progress-bar-container">
+            <div class="progress-bar-fill"></div>
+          </div>
+        </div>
+        <ul class="pain-points-list">
+          <li>
+            <div class="icon-wrapper"><div class="icon-symbol">!</div></div>
+            <p>Manual customer data management</p>
+          </li>
+          <li>
+            <div class="icon-wrapper"><div class="icon-symbol">!</div></div>
+            <p>Disconnected sales and finance systems</p>
+          </li>
+          <li>
+            <div class="icon-wrapper"><div class="icon-symbol">!</div></div>
+            <p>Poor lead tracking and follow-up</p>
+          </li>
+          <li>
+            <div class="icon-wrapper"><div class="icon-symbol">!</div></div>
+            <p>Time-consuming invoice creation</p>
+          </li>
+          <li>
+            <div class="icon-wrapper"><div class="icon-symbol">!</div></div>
+            <p>Lack of business insights and reporting</p>
+          </li>
+          <li>
+            <div class="icon-wrapper"><div class="icon-symbol">!</div></div>
+            <p>Inefficient project management</p>
+          </li>
+        </ul>
+      </div>
+      <div class="impact-statement">
+        <p>'Result: Lost opportunities, reduced efficiency, limited growth'</p>
+      </div>
+    </div>
+    <div class="right-column">
+        <img src="images/digital_transformation_benefits_small_business_infographic.jpg" alt="Infographic showing 5 benefits of digital transformation for small businesses, including cost savings and data-driven insights.">
+    </div>
+  </div>
+</body>
+</html>

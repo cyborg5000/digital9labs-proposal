@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing & Plans Overview</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+    
+    body {
+      margin: 0;
+      padding: 0;
+      width: 1280px;
+      height: 720px;
+      background-color: #FFFFFF;
+      font-family: 'Inter', 'Noto Sans SC', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .slide-container {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 40px;
+      box-sizing: border-box;
+      text-align: center;
+    }
+
+    .header h1 {
+      font-size: 48px;
+      font-weight: 700;
+      color: #111827;
+      margin: 0 0 8px 0;
+    }
+
+    .header p {
+      font-size: 18px;
+      color: #6B7280;
+      margin: 0;
+    }
+
+    .pricing-table {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 24px;
+      margin-top: 48px;
+      width: 100%;
+      max-width: 1100px;
+    }
+    
+    .plan-wrapper {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .plan-card {
+      background-color: #FFFFFF;
+      border: 1px solid #E5E7EB;
+      border-radius: 12px;
+      padding: 24px;
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      transition: all 0.3s ease;
+      box-sizing: border-box;
+      height: 440px;
+    }
+
+    .plan-card h2 {
+      font-size: 24px;
+      font-weight: 600;
+      margin: 0 0 16px 0;
+    }
+    .starter h2 { color: #059669; }
+    .professional h2 { color: #2563eb; }
+    .enterprise h2 { color: #d97706; }
+
+    .price {
+      font-size: 52px;
+      font-weight: 700;
+      color: #111827;
+      margin: 0;
+      line-height: 1;
+    }
+    
+    .price-period {
+      font-size: 16px;
+      color: #6B7280;
+      margin-left: 4px;
+    }
+
+    .features {
+      list-style: none;
+      padding: 0;
+      margin: 24px 0;
+      flex-grow: 1;
+    }
+
+    .features li {
+      display: flex;
+      align-items: center;
+      font-size: 15px;
+      color: #4B5563;
+      margin-bottom: 12px;
+    }
+
+    .features li svg {
+      flex-shrink: 0;
+      margin-right: 10px;
+      width: 16px;
+      height: 16px;
+    }
+
+    .plan-tagline {
+      font-size: 14px;
+      font-style: italic;
+      color: #6B7280;
+      text-align: center;
+      margin-top: auto;
+      margin-bottom: 16px;
+      height: 3em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .cta-button {
+      width: 100%;
+      padding: 12px;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 600;
+      color: #FFFFFF;
+      border: none;
+      cursor: pointer;
+      transition: opacity 0.3s ease;
+    }
+    .cta-button:hover {
+      opacity: 0.9;
+    }
+
+    .starter-btn { background-color: #059669; }
+    .professional-btn { background-color: #2563eb; }
+    .enterprise-btn { background-color: #d97706; }
+
+    .popular-badge {
+      position: absolute;
+      top: -15px;
+      background-color: #2563eb;
+      color: #FFFFFF;
+      padding: 6px 16px;
+      font-size: 12px;
+      font-weight: 700;
+      border-radius: 16px;
+      z-index: 2;
+    }
+    
+    .professional .plan-card {
+      border: 2px solid #2563eb;
+      transform: translateY(-20px);
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+      height: 460px;
+    }
+
+    .footer-text {
+      margin-top: 40px;
+      font-size: 14px;
+      color: #6B7280;
+    }
+    
+    .footer-text p {
+      margin: 4px 0;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="slide-container">
+    <div class="header">
+      <h1>Simple, Transparent Pricing</h1>
+      <p>Choose the plan that fits your business size and growth stage</p>
+    </div>
+
+    <div class="pricing-table">
+      <!-- Starter Plan -->
+      <div class="plan-wrapper starter">
+        <div class="plan-card">
+          <h2>Starter Plan</h2>
+          <div>
+            <strong class="price">$49</strong>
+            <span class="price-period">/month</span>
+          </div>
+          <ul class="features">
+            <li><svg fill="#059669" viewBox="0 0 16 16"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/></svg>Up to 5 users</li>
+            <li><svg fill="#059669" viewBox="0 0 16 16"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/></svg>1,000 contacts</li>
+            <li><svg fill="#059669" viewBox="0 0 16 16"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/></svg>Basic CRM features</li>
+            <li><svg fill="#059669" viewBox="0 0 16 16"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/></svg>Email support</li>
+            <li><svg fill="#059669" viewBox="0 0 16 16"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/></svg>Mobile app access</li>
+          </ul>
+          <p class="plan-tagline">Perfect for new SMEs</p>
+          <button class="cta-button starter-btn">Get Started</button>
+        </div>
+      </div>
+
+      <!-- Professional Plan -->
+      <div class="plan-wrapper professional">
+        <div class="popular-badge">MOST POPULAR</div>
+        <div class="plan-card">
+          <h2>Professional Plan</h2>
+          <div>
+            <strong class="price">$99</strong>
+            <span class="price-period">/month</span>
+          </div>
+          <ul class="features">
+            <li><svg fill="#2563eb" viewBox="0 0 16 16"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/></svg>Up to 25 users</li>
+            <li><svg fill="#2563eb" viewBox="0 0 16 16"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/></svg>10,000 contacts</li>
+            <li><svg fill="#2563eb" viewBox="0 0 16 16"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/></svg>Full CRM + Financial management</li>
+            <li><svg fill="#2563eb" viewBox="0 0 16 16"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/></svg>Advanced automation</li>
+            <li><svg fill="#2563eb" viewBox="0 0 16 16"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/></svg>Priority support</li>
+            <li><svg fill="#2563eb" viewBox="0 0 16 16"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/></svg>WhatsApp integration</li>
+          </ul>
+          <p class="plan-tagline">Ideal for growing businesses</p>
+          <button class="cta-button professional-btn">Choose Professional</button>
+        </div>
+      </div>
+
+      <!-- Enterprise Plan -->
+      <div class="plan-wrapper enterprise">
+        <div class="plan-card">
+          <h2>Enterprise Plan</h2>
+          <div>
+            <strong class="price">$199</strong>
+            <span class="price-period">/month</span>
+          </div>
+          <ul class="features">
+            <li><svg fill="#d97706" viewBox="0 0 16 16"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/></svg>Unlimited users</li>
+            <li><svg fill="#d97706" viewBox="0 0 16 16"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/></svg>Unlimited contacts</li>
+            <li><svg fill="#d97706" viewBox="0 0 16 16"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/></svg>All features included</li>
+            <li><svg fill="#d97706" viewBox="0 0 16 16"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/></svg>Custom integrations</li>
+            <li><svg fill="#d97706" viewBox="0 0 16 16"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/></svg>Dedicated success manager</li>
+            <li><svg fill="#d97706" viewBox="0 0 16 16"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/></svg>API access</li>
+          </ul>
+          <p class="plan-tagline">For established SMEs</p>
+          <button class="cta-button enterprise-btn">Contact Sales</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-text">
+      <p>30-day free trial • No setup fees • Cancel anytime</p>
+      <p>Average ROI of 300% within 12 months</p>
+    </div>
+  </div>
+</body>
+</html>

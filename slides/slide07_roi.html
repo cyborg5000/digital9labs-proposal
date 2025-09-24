@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ROI and Business Impact Slide</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .slide {
+      width: 1280px;
+      height: 720px;
+      background-color: #0a0a0a;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .background-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 1;
+      opacity: 0.1;
+    }
+
+    .content-overlay {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      padding: 40px 50px;
+      box-sizing: border-box;
+      text-align: center;
+      color: #ffffff;
+      animation: contentFadeIn 1s ease-out;
+    }
+
+    @keyframes contentFadeIn {
+      from { opacity: 0; transform: translateY(15px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    .slide-header {
+        margin-top: 10px;
+    }
+
+    .slide-header h1 {
+      font-size: 52px;
+      font-weight: 900;
+      margin: 0;
+      text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+    }
+
+    .slide-header p {
+      font-size: 22px;
+      font-style: italic;
+      margin: 8px 0 0 0;
+      opacity: 0.85;
+      font-weight: 400;
+    }
+
+    .metrics-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      width: 100%;
+      max-width: 1150px;
+    }
+
+    .metric-card {
+      flex: 1 1 30%;
+      min-width: 320px;
+      padding: 15px;
+      background-color: rgba(255, 255, 255, 0.05);
+      border-radius: 12px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+    
+    .metric-card:hover {
+        transform: translateY(-5px);
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .metric-value-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .metric-value {
+      font-size: 60px;
+      font-weight: 900;
+      line-height: 1;
+      margin: 0;
+    }
+    
+    .metric-arrow {
+        font-size: 28px;
+        margin-left: 12px;
+        font-weight: 900;
+    }
+
+    .metric-description {
+      font-size: 17px;
+      margin-top: 10px;
+      opacity: 0.9;
+      max-width: 280px;
+      line-height: 1.4;
+    }
+
+    .metric-card:nth-child(1) .metric-value, .metric-card:nth-child(1) .metric-arrow { color: #10b981; }
+    .metric-card:nth-child(2) .metric-value, .metric-card:nth-child(2) .metric-arrow { color: #3b82f6; }
+    .metric-card:nth-child(3) .metric-value, .metric-card:nth-child(3) .metric-arrow { color: #10b981; }
+    .metric-card:nth-child(4) .metric-value, .metric-card:nth-child(4) .metric-arrow { color: #3b82f6; }
+    .metric-card:nth-child(5) .metric-value, .metric-card:nth-child(5) .metric-arrow { color: #f59e0b; }
+    .metric-card:nth-child(6) .metric-value, .metric-card:nth-child(6) .metric-arrow { color: #f59e0b; }
+
+    .success-stories-section {
+        width: 100%;
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .success-stories {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        width: 100%;
+        max-width: 1150px;
+    }
+
+    .story {
+        font-style: italic;
+        font-size: 16px;
+        padding: 15px 20px;
+        background: rgba(0, 0, 0, 0.2);
+        border-left: 4px solid #f59e0b;
+        border-radius: 0 8px 8px 0;
+        flex: 1;
+        text-align: left;
+        margin: 0;
+    }
+
+    .call-to-action {
+        font-size: 20px;
+        font-weight: 700;
+        margin: 0;
+        font-style: italic;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <img src="images/crm_presentation_4.jpg" alt="ROI Visualization Background" class="background-image">
+    <div class="content-overlay">
+      <header class="slide-header">
+        <h1>Proven ROI & Business Impact</h1>
+        <p>Real results from SMEs using our CRM platform</p>
+      </header>
+
+      <div class="metrics-grid">
+        <div class="metric-card">
+          <div class="metric-value-container">
+            <p class="metric-value">40%</p>
+            <p class="metric-arrow">▲</p>
+          </div>
+          <p class="metric-description">increase in sales productivity</p>
+        </div>
+        <div class="metric-card">
+          <div class="metric-value-container">
+            <p class="metric-value">60%</p>
+            <p class="metric-arrow">▲</p>
+          </div>
+          <p class="metric-description">faster quote-to-cash cycle</p>
+        </div>
+        <div class="metric-card">
+          <div class="metric-value-container">
+            <p class="metric-value">35%</p>
+            <p class="metric-arrow">▲</p>
+          </div>
+          <p class="metric-description">improvement in customer retention</p>
+        </div>
+        <div class="metric-card">
+          <div class="metric-value-container">
+            <p class="metric-value">50%</p>
+            <p class="metric-arrow">▼</p>
+          </div>
+          <p class="metric-description">reduction in administrative time</p>
+        </div>
+        <div class="metric-card">
+          <div class="metric-value-container">
+            <p class="metric-value">25%</p>
+            <p class="metric-arrow">▲</p>
+          </div>
+          <p class="metric-description">increase in average deal size</p>
+        </div>
+        <div class="metric-card">
+          <div class="metric-value-container">
+            <p class="metric-value">300%</p>
+            <p class="metric-arrow">▲</p>
+          </div>
+          <p class="metric-description">ROI within first 12 months</p>
+        </div>
+      </div>
+      
+      <footer class="success-stories-section">
+        <div class="success-stories">
+            <blockquote class="story">"We closed 40% more deals in the first quarter after implementation"</blockquote>
+            <blockquote class="story">"Our team saves 10 hours per week on administrative tasks"</blockquote>
+            <blockquote class="story">"Customer satisfaction scores increased by 30%"</blockquote>
+        </div>
+        <p class="call-to-action">Join hundreds of SMEs already transforming their business</p>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>

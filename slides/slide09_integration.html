@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seamless Integration & Advanced Features</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap');
+    
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+      background-color: #f0f2f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .slide {
+      width: 1280px;
+      height: 720px;
+      background-color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .header {
+      padding: 40px 60px 20px 60px;
+      text-align: left;
+    }
+
+    .header h1 {
+      font-size: 48px;
+      font-weight: 900;
+      color: #7c3aed;
+      margin: 0;
+      line-height: 1.2;
+    }
+
+    .header h2 {
+      font-size: 20px;
+      font-weight: 400;
+      color: #4b5563;
+      margin: 5px 0 0 0;
+    }
+
+    .main-content {
+      display: flex;
+      flex-grow: 1;
+      padding: 0 60px 20px 60px;
+      gap: 40px;
+      align-items: flex-start;
+    }
+
+    .left-column {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      height: 480px;
+    }
+
+    .hub-spoke-diagram {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+    .hub {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 160px;
+      height: 160px;
+      background-color: #7c3aed;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 20px;
+      font-weight: 700;
+      text-align: center;
+      z-index: 10;
+    }
+
+    .spoke {
+      position: absolute;
+      background-color: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 10px 15px;
+      width: 160px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      z-index: 10;
+    }
+    
+    .spoke h3 {
+        margin: 0 0 4px 0;
+        font-size: 15px;
+        color: #1e293b;
+        font-weight: 700;
+    }
+
+    .spoke p {
+        margin: 0;
+        font-size: 13px;
+        color: #64748b;
+        line-height: 1.4;
+    }
+
+    .spoke-1 { top: 0; left: 50%; transform: translateX(-50%); }
+    .spoke-2 { top: 30%; right: 0; transform: translateY(-50%); }
+    .spoke-3 { bottom: 30%; right: 0; transform: translateY(50%); }
+    .spoke-4 { bottom: 0; left: 50%; transform: translateX(-50%); }
+    .spoke-5 { bottom: 30%; left: 0; transform: translateY(50%); }
+    .spoke-6 { top: 30%; left: 0; transform: translateY(-50%); }
+
+    .line {
+        position: absolute;
+        background-color: #e2e8f0;
+        height: 1px;
+        top: 50%;
+        left: 50%;
+        z-index: 1;
+    }
+
+    .line-1 { width: 140px; transform: translate(-50%, -50%) rotate(90deg) translateX(70px); }
+    .line-2 { width: 150px; transform: translate(-50%, -50%) rotate(30deg) translateX(75px); }
+    .line-3 { width: 150px; transform: translate(-50%, -50%) rotate(-30deg) translateX(75px); }
+    .line-4 { width: 140px; transform: translate(-50%, -50%) rotate(90deg) translateX(-70px); }
+    .line-5 { width: 150px; transform: translate(-50%, -50%) rotate(210deg) translateX(75px); }
+    .line-6 { width: 150px; transform: translate(-50%, -50%) rotate(150deg) translateX(75px); }
+
+    .right-column {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      height: 480px;
+    }
+
+    .image-container {
+      flex: 1;
+      border-radius: 12px;
+      overflow: hidden;
+      background-color: #2c3e50;
+      min-height: 200px;
+    }
+
+    .image-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+    }
+    
+    .features {
+      flex-shrink: 0;
+    }
+
+    .features h3 {
+      font-size: 22px;
+      font-weight: 700;
+      color: #0f172a;
+      margin: 0 0 15px 0;
+    }
+    
+    .features ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    
+    .features li {
+      display: flex;
+      align-items: flex-start;
+      font-size: 16px;
+      color: #334155;
+      line-height: 1.5;
+    }
+
+    .bullet {
+      width: 10px;
+      height: 10px;
+      background-color: #0891b2;
+      border-radius: 50%;
+      margin-right: 12px;
+      flex-shrink: 0;
+      margin-top: 6px;
+    }
+
+    .footer {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 60px;
+      background-color: #0891b2;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 18px;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="header">
+      <h1>Seamless Integration & Advanced Features</h1>
+      <h2>Connect your entire business ecosystem</h2>
+    </div>
+
+    <div class="main-content">
+      <div class="left-column">
+        <div class="hub-spoke-diagram">
+            <div class="line line-1"></div>
+            <div class="line line-2"></div>
+            <div class="line line-3"></div>
+            <div class="line line-4"></div>
+            <div class="line line-5"></div>
+            <div class="line line-6"></div>
+          
+            <div class="hub">Your Platform</div>
+
+            <div class="spoke spoke-1">
+                <h3>Email Platforms</h3>
+                <p>Gmail, Outlook, SMTP</p>
+            </div>
+            <div class="spoke spoke-2">
+                <h3>Communication</h3>
+                <p>WhatsApp Business API</p>
+            </div>
+            <div class="spoke spoke-3">
+                <h3>Accounting</h3>
+                <p>QuickBooks, Xero</p>
+            </div>
+            <div class="spoke spoke-4">
+                <h3>E-commerce</h3>
+                <p>Shopify, WooCommerce</p>
+            </div>
+            <div class="spoke spoke-5">
+                <h3>Document Mgt.</h3>
+                <p>Google Drive, Dropbox</p>
+            </div>
+            <div class="spoke spoke-6">
+                <h3>Marketing</h3>
+                <p>Mailchimp, HubSpot</p>
+            </div>
+        </div>
+      </div>
+      <div class="right-column">
+        <div class="image-container">
+          <img src="images/professional_sales_pipeline_funnel_visualization_crm.jpg" alt="Sales pipeline funnel visualization">
+        </div>
+        <div class="features">
+          <h3>Advanced Features</h3>
+          <ul>
+            <li><div class="bullet"></div>Manage multiple business brands under one roof</li>
+            <li><div class="bullet"></div>Automate processes with custom business workflows</li>
+            <li><div class="bullet"></div>Full API access for custom integrations</li>
+            <li><div class="bullet"></div>Native iOS and Android mobile applications</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer">
+      One platform that connects everything you already use
+    </div>
+  </div>
+</body>
+</html>
