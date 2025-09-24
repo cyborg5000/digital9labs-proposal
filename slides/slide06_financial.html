@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Integrated Financial Management</title>
+  <title>Financial Handover Support</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
@@ -30,17 +30,15 @@
 
     .header h1 {
       font-size: 44px;
-      color: #059669;
+      color: #0f766e;
       font-weight: 700;
       margin: 0 0 5px 0;
-      animation: fadeInDown 0.8s ease-out;
     }
 
     .header p {
       font-size: 20px;
-      color: #4A5568;
+      color: #475569;
       margin: 0;
-      animation: fadeInDown 0.8s ease-out 0.2s;
     }
 
     .content {
@@ -63,15 +61,14 @@
     .feature-item {
       display: flex;
       align-items: center;
-      animation: fadeInLeft 0.7s ease-out;
     }
 
     .feature-item .icon {
       width: 56px;
       height: 56px;
       border-radius: 50%;
-      border: 2px solid #059669;
-      color: #059669;
+      border: 2px solid #0f766e;
+      color: #0f766e;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -79,24 +76,18 @@
       font-weight: 700;
       flex-shrink: 0;
       margin-right: 20px;
-      transition: all 0.3s ease;
-    }
-
-    .feature-item:hover .icon {
-        background-color: #059669;
-        color: #ffffff;
     }
 
     .feature-text h3 {
       font-size: 19px;
       font-weight: 700;
-      color: #2D3748;
+      color: #1f2937;
       margin: 0;
     }
 
     .feature-text p {
       font-size: 15px;
-      color: #718096;
+      color: #4b5563;
       margin: 4px 0 0 0;
     }
 
@@ -107,7 +98,6 @@
       justify-content: center;
       align-items: center;
       gap: 25px;
-      animation: fadeInRight 0.7s ease-out;
     }
     
     .right-panel img {
@@ -118,55 +108,43 @@
       box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.07), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
     }
     
-    .benefits-box {
+    .workflow-box {
       width: 100%;
       max-width: 600px;
       box-sizing: border-box;
-      background-color: #FEFCE8;
+      background-color: #f0fdfa;
       padding: 20px 25px;
-      border-left: 5px solid #d97706;
+      border-left: 5px solid #0f766e;
+      border-radius: 8px;
     }
     
-    .benefit-item {
+    .workflow-step {
       display: flex;
       align-items: flex-start;
       margin-bottom: 12px;
       font-size: 16px;
-      color: #374151;
+      color: #0f172a;
     }
 
-    .benefit-item:last-child {
+    .workflow-step:last-child {
         margin-bottom: 0;
     }
     
-    .benefit-item-icon {
-      color: #d97706;
+    .workflow-step-number {
+      color: #0f766e;
       font-weight: bold;
-      font-size: 20px;
+      font-size: 18px;
       margin-right: 12px;
       line-height: 1.1;
     }
 
     .footer {
-      background-color: #059669;
+      background-color: #0f766e;
       color: white;
       text-align: center;
-      padding: 12px;
+      padding: 14px;
       font-size: 18px;
       font-style: italic;
-    }
-
-    @keyframes fadeInDown {
-        from { opacity: 0; transform: translateY(-20px); }
-        to { opacity: 1; transform: translateY(0); }
-    }
-    @keyframes fadeInLeft {
-        from { opacity: 0; transform: translateX(-20px); }
-        to { opacity: 1; transform: translateX(0); }
-    }
-    @keyframes fadeInRight {
-        from { opacity: 0; transform: translateX(20px); }
-        to { opacity: 1; transform: translateX(0); }
     }
 
   </style>
@@ -174,74 +152,63 @@
 <body>
   <div class="slide">
     <div class="header">
-      <h1>Integrated Financial Management</h1>
-      <p>From Quote to Payment - Streamlined Financial Operations</p>
+      <h1>Keep Finance in the Loop</h1>
+      <p>Capture everything they need the moment a deal is approved.</p>
     </div>
 
     <div class="content">
       <div class="left-panel">
-        <div class="feature-item" style="animation-delay: 0.2s;">
+        <div class="feature-item">
+          <div class="icon">Q</div>
+          <div class="feature-text">
+            <h3>Quotes Stored with the Deal</h3>
+            <p>Attach the agreed scope, price, and document version so nothing gets lost.</p>
+          </div>
+        </div>
+        <div class="feature-item">
           <div class="icon">$</div>
           <div class="feature-text">
-            <h3>Quote Generation</h3>
-            <p>Professional, branded quotes in minutes</p>
+            <h3>Payment Terms Recorded</h3>
+            <p>Log deposits, milestones, or monthly billing details for quick reference.</p>
           </div>
         </div>
-        <div class="feature-item" style="animation-delay: 0.35s;">
-          <div class="icon" style="font-size:18px;">Inv</div>
+        <div class="feature-item">
+          <div class="icon">T</div>
           <div class="feature-text">
-            <h3>Invoice Automation</h3>
-            <p>Auto-generated invoices from closed deals</p>
+            <h3>Tasks for Finance</h3>
+            <p>Assign “Send invoice” or “Confirm deposit” so follow-ups are visible.</p>
           </div>
         </div>
-        <div class="feature-item" style="animation-delay: 0.5s;">
-          <div class="icon" style="font-size:28px;">💳</div>
+        <div class="feature-item">
+          <div class="icon">📁</div>
           <div class="feature-text">
-            <h3>Payment Processing</h3>
-            <p>Multiple payment methods and tracking</p>
-          </div>
-        </div>
-        <div class="feature-item" style="animation-delay: 0.65s;">
-            <div class="icon" style="font-size:28px;">📈</div>
-            <div class="feature-text">
-              <h3>Financial Reporting</h3>
-              <p>Real-time revenue and cash flow insights</p>
-            </div>
-        </div>
-        <div class="feature-item" style="animation-delay: 0.8s;">
-          <div class="icon">%</div>
-          <div class="feature-text">
-            <h3>Tax Management</h3>
-            <p>Automated tax calculations and compliance</p>
+            <h3>Delivery Notes</h3>
+            <p>Share handover checklists and files in the same record.</p>
           </div>
         </div>
       </div>
 
       <div class="right-panel">
-        <img src="images/Oracle_NetSuite_ERP_Dashboard_Customer_Service_Sales_Order_Interface.jpg" alt="Oracle NetSuite ERP Dashboard Interface">
-        <div class="benefits-box">
-          <div class="benefit-item">
-            <div class="benefit-item-icon">✓</div>
-            <p style="margin:0;">Reduce invoice creation time by 80%</p>
+        <img src="images/Oracle_NetSuite_ERP_Dashboard_Customer_Service_Sales_Order_Interface.jpg" alt="Example dashboard showing deal information and financial notes">
+        <div class="workflow-box">
+          <div class="workflow-step">
+            <div class="workflow-step-number">1.</div>
+            <div>Sales updates the deal with final pricing, payment schedule, and attachments.</div>
           </div>
-          <div class="benefit-item">
-            <div class="benefit-item-icon">✓</div>
-            <p style="margin:0;">Improve cash flow with faster payments</p>
+          <div class="workflow-step">
+            <div class="workflow-step-number">2.</div>
+            <div>Finance filters “Won – invoice pending” deals and issues invoices in their system.</div>
           </div>
-          <div class="benefit-item">
-            <div class="benefit-item-icon">✓</div>
-            <p style="margin:0;">Eliminate manual financial data entry</p>
-          </div>
-          <div class="benefit-item">
-            <div class="benefit-item-icon">✓</div>
-            <p style="margin:0;">Professional brand presentation</p>
+          <div class="workflow-step">
+            <div class="workflow-step-number">3.</div>
+            <div>Payment status is noted back in the CRM so sales can follow up.</div>
           </div>
         </div>
       </div>
     </div>
     
     <div class="footer">
-      Transform your financial operations from reactive to proactive
+      A disciplined CRM habit keeps money flowing without extra software.
     </div>
   </div>
 </body>

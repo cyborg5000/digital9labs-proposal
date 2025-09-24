@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Implementation & Support Slide</title>
+  <title>Implementation Overview</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
@@ -16,7 +16,7 @@
       align-items: center;
       justify-content: center;
       background-color: #f0f2f5;
-      font-family: 'Poppins', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif, 'PingFang SC', 'Microsoft YaHei';
+      font-family: 'Poppins', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
     }
 
     .slide {
@@ -42,14 +42,13 @@
     .slide-header h1 {
       font-size: 48px;
       font-weight: 700;
-      color: #ea580c;
+      color: #1d4ed8;
       margin: 0;
     }
 
     .slide-header p {
       font-size: 22px;
-      font-style: italic;
-      color: #555;
+      color: #475569;
       margin: 5px 0 0 0;
     }
 
@@ -59,258 +58,175 @@
       gap: 50px;
     }
 
-    .implementation-process {
+    .timeline {
       width: 55%;
       display: flex;
       flex-direction: column;
     }
-    
-    .timeline-container {
-        display: flex;
-        flex-direction: column;
-        position: relative;
-    }
 
     .step {
-        display: flex;
-        align-items: flex-start;
-        margin-bottom: 15px;
-        position: relative;
-    }
-    
-    .step-indicator-wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-right: 20px;
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 18px;
     }
 
-    .step-indicator {
-        width: 40px;
-        height: 40px;
-        background-color: #ea580c;
-        color: white;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 20px;
-        font-weight: 700;
-        flex-shrink: 0;
-        z-index: 2;
-    }
-    
-    .step-line {
-        width: 3px;
-        background-color: #e0e0e0;
-        height: 100%;
-        flex-grow: 1;
-    }
-    
-    .step:last-child .step-line {
-        background-color: transparent;
-    }
-
-    .step-content {
-      padding-top: 5px;
+    .step-number {
+      width: 42px;
+      height: 42px;
+      background-color: #1d4ed8;
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      font-weight: 700;
+      flex-shrink: 0;
+      margin-right: 16px;
     }
 
     .step-content h3 {
       font-size: 20px;
       font-weight: 600;
-      color: #333;
-      margin: 0;
-    }
-    
-    .step-content strong {
-        color: #ea580c;
-        font-weight: 600;
+      color: #0f172a;
+      margin: 0 0 6px 0;
     }
 
     .step-content p {
-      font-size: 16px;
-      color: #666;
-      margin: 5px 0 0 0;
+      margin: 0;
+      font-size: 15px;
+      color: #475569;
       line-height: 1.5;
     }
-    
-    .support-section {
-      width: 45%;
+
+    .support-column {
+      flex: 1;
       background-color: #f8fafc;
-      border-radius: 12px;
-      padding: 30px;
-      box-sizing: border-box;
+      border-radius: 16px;
+      padding: 24px;
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      border: 1px solid #e2e8f0;
+      gap: 18px;
+      box-shadow: 0 10px 24px rgba(29, 78, 216, 0.08);
     }
 
     .support-item {
-        display: flex;
-        align-items: center;
-        margin-bottom: 25px;
-    }
-
-    .support-item:last-child {
-        margin-bottom: 0;
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
     }
 
     .support-icon {
-        font-size: 32px;
-        color: #2563eb;
-        margin-right: 20px;
-        width: 40px;
-        text-align: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      background-color: #dbeafe;
+      color: #1d4ed8;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      font-weight: 600;
     }
-    
+
     .support-details h4 {
-        font-size: 18px;
-        font-weight: 600;
-        color: #2563eb;
-        margin: 0 0 4px 0;
+      font-size: 18px;
+      font-weight: 600;
+      color: #0f172a;
+      margin: 0 0 4px 0;
     }
-    
+
     .support-details p {
-        font-size: 15px;
-        color: #475569;
-        margin: 0;
+      font-size: 15px;
+      color: #475569;
+      margin: 0;
+      line-height: 1.4;
     }
 
     .footer {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 80px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0 60px;
-      box-sizing: border-box;
-      background: linear-gradient(to right, #ea580c, #f97316);
-    }
-    
-    .promise-text {
-        font-size: 18px;
-        font-weight: 600;
-        color: #ffffff;
-        font-style: italic;
-    }
-
-    .partnership-image {
-        position: absolute;
-        bottom: 25px;
-        right: 40px;
-        width: 200px;
-        height: auto;
-        border-radius: 10px;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-        opacity: 0.9;
-        border: 3px solid white;
-    }
-
-    .hidden-image {
-      position: absolute;
-      bottom: 80px;
-      right: 60px;
-      width: 220px;
-      height: auto;
+      margin-top: 30px;
+      background: linear-gradient(to right, #1d4ed8, #3b82f6);
       border-radius: 12px;
-      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-      border: 4px solid white;
+      color: white;
+      padding: 18px;
+      text-align: center;
+      font-size: 18px;
+      font-weight: 600;
     }
-
   </style>
 </head>
 <body>
   <div class="slide">
     <div class="slide-header">
-      <h1>Quick Setup & Dedicated Support</h1>
-      <p>Get up and running in days, not months</p>
+      <h1>Implementation Without the Headache</h1>
+      <p>We guide your team through a few focused steps.</p>
     </div>
 
     <div class="main-content">
-      <div class="implementation-process">
+      <div class="timeline">
         <div class="step">
-          <div class="step-indicator-wrapper">
-            <div class="step-indicator">1</div>
-            <div class="step-line"></div>
-          </div>
+          <div class="step-number">1</div>
           <div class="step-content">
-            <h3><strong>Day 1-2:</strong> Initial Setup</h3>
-            <p>Data migration and system configuration. User account creation and permissions.</p>
+            <h3>Prep Call</h3>
+            <p>Review existing spreadsheets, map key fields, and set a launch date.</p>
           </div>
         </div>
         <div class="step">
-          <div class="step-indicator-wrapper">
-            <div class="step-indicator">2</div>
-            <div class="step-line"></div>
-          </div>
+          <div class="step-number">2</div>
           <div class="step-content">
-            <h3><strong>Day 3-5:</strong> Customization</h3>
-            <p>Workflow setup and automation rules. Brand customization and templates.</p>
+            <h3>Import & Clean</h3>
+            <p>We guide you through cleaning duplicates, loading contacts, and structuring deals.</p>
           </div>
         </div>
         <div class="step">
-          <div class="step-indicator-wrapper">
-            <div class="step-indicator">3</div>
-            <div class="step-line"></div>
-          </div>
+          <div class="step-number">3</div>
           <div class="step-content">
-            <h3><strong>Day 6-7:</strong> Training</h3>
-            <p>Team training sessions and documentation. Best practices and optimization tips.</p>
+            <h3>Define Habits</h3>
+            <p>Agree on pipeline stages, required fields, and when to set reminders.</p>
           </div>
         </div>
         <div class="step">
-          <div class="step-indicator-wrapper">
-            <div class="step-indicator">4</div>
-            <div class="step-line"></div>
-          </div>
+          <div class="step-number">4</div>
           <div class="step-content">
-            <h3><strong>Day 8+:</strong> Go Live</h3>
-            <p>Launch support and monitoring. Ongoing optimization and assistance.</p>
+            <h3>Team Walkthrough</h3>
+            <p>Live training using real data so everyone practices logging notes and tasks.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">5</div>
+          <div class="step-content">
+            <h3>First Review</h3>
+            <p>One week later we check data hygiene and adjust anything that is not clicking.</p>
           </div>
         </div>
       </div>
-      
-      <div class="support-section">
+
+      <div class="support-column">
         <div class="support-item">
           <div class="support-icon">💬</div>
           <div class="support-details">
-            <h4>24/7 Chat Support</h4>
-            <p>Instant help when you need it</p>
+            <h4>WhatsApp Support</h4>
+            <p>Reply within business hours for quick questions and tips.</p>
           </div>
         </div>
         <div class="support-item">
-          <div class="support-icon">▶️</div>
+          <div class="support-icon">📄</div>
           <div class="support-details">
-            <h4>Video Tutorials</h4>
-            <p>Comprehensive learning library</p>
+            <h4>One-Page Guides</h4>
+            <p>Role-based checklists keep everyone on the same process.</p>
           </div>
         </div>
         <div class="support-item">
-          <div class="support-icon">👤</div>
+          <div class="support-icon">🔁</div>
           <div class="support-details">
-            <h4>Dedicated Success Manager</h4>
-            <p>Personal guidance for growth</p>
-          </div>
-        </div>
-        <div class="support-item">
-          <div class="support-icon">👥</div>
-          <div class="support-details">
-            <h4>Community Forum</h4>
-            <p>Connect with other SME users</p>
+            <h4>Quarterly Tune-Ups</h4>
+            <p>Optional review sessions to refine stages, reports, or permissions.</p>
           </div>
         </div>
       </div>
     </div>
-    
-    <img src="images/crm_presentation_8.jpg" alt="Partnership Handshake" class="hidden-image">
 
-    <div class="footer">
-        <p class="promise-text">Your success is our success - we're with you every step</p>
-    </div>
+    <div class="footer">Implementation is collaborative and lightweight—most teams go live within two weeks.</div>
   </div>
 </body>
 </html>

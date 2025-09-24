@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Information and Demo Request Slide</title>
+  <title>Contact Slide</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
     body {
       margin: 0;
-      font-family: 'Poppins', 'Helvetica Neue', Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+      font-family: 'Poppins', 'Helvetica Neue', Arial, sans-serif;
       background-color: #f0f2f5;
       display: flex;
       justify-content: center;
@@ -27,18 +27,12 @@
       justify-content: space-between;
       padding: 55px 75px;
       box-sizing: border-box;
-      animation: fadeIn 1s ease-in-out;
-    }
-    
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(10px); }
-      to { opacity: 1; transform: translateY(0); }
     }
 
     .header-section h1 {
-      font-size: 50px;
+      font-size: 48px;
       font-weight: 700;
-      color: #1e40af;
+      color: #1d4ed8;
       margin: 0 0 8px 0;
       line-height: 1.2;
     }
@@ -57,105 +51,64 @@
     }
 
     .left-column {
-      flex: 1.2;
+      flex: 1;
       display: flex;
       flex-direction: column;
-      gap: 30px;
+      gap: 24px;
+    }
+
+    .contact-block {
+      background-color: #ffffff;
+      border-radius: 14px;
+      padding: 20px;
+      border-left: 4px solid #1d4ed8;
+      box-shadow: 0 8px 24px rgba(29, 78, 216, 0.08);
+    }
+
+    .contact-block h2 {
+      font-size: 20px;
+      font-weight: 600;
+      color: #0f172a;
+      margin: 0 0 12px 0;
+    }
+
+    .contact-block p {
+      margin: 0 0 10px 0;
+      font-size: 15px;
+      color: #475569;
+      line-height: 1.5;
+    }
+
+    .contact-block strong {
+      color: #0f172a;
+      font-weight: 600;
     }
 
     .right-column {
-      flex: 0.8;
+      flex: 1;
       display: flex;
       flex-direction: column;
       gap: 20px;
     }
 
-    .contact-grid {
-      display: flex;
-      gap: 40px;
+    .note-box {
+      background-color: #e0e7ff;
+      border-radius: 16px;
+      padding: 22px;
+      font-size: 16px;
+      color: #1d4ed8;
+      line-height: 1.6;
+      box-shadow: 0 12px 28px rgba(29, 78, 216, 0.1);
     }
 
-    .contact-block {
-      flex: 1;
-    }
-
-    .contact-block h2 {
-      font-size: 19px;
-      font-weight: 600;
-      color: #059669;
-      margin: 0 0 15px 0;
-      padding-bottom: 8px;
-      border-bottom: 2px solid #d1fae5;
-    }
-
-    .contact-block p {
-      margin: 0 0 12px 0;
+    .workflow-box {
+      background-color: #ffffff;
+      border-radius: 14px;
+      padding: 22px;
+      border: 1px solid #e2e8f0;
       font-size: 15px;
-      color: #334155;
-      line-height: 1.5;
-    }
-
-    .contact-block strong {
-      color: #1e293b;
-      font-weight: 600;
-      display: block;
-      margin-bottom: 2px;
-    }
-
-    .image-container {
-      background-color: #0f172a;
-      border-radius: 12px;
-      padding: 20px;
-      box-shadow: 0 8px 16px rgba(15, 23, 42, 0.1);
-    }
-    
-    .image-container img {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
-      display: block;
-    }
-
-    .value-statement {
-      background-color: #e0f2fe;
-      border-left: 4px solid #38bdf8;
-      padding: 16px 20px;
-      border-radius: 0 6px 6px 0;
-    }
-
-    .value-statement p {
-      margin: 0;
-      font-size: 15px;
-      font-style: italic;
-      color: #075985;
-      font-weight: 600;
-    }
-    
-    .company-info {
-        background-color: #ffffff;
-        padding: 20px;
-        border-radius: 8px;
-        border: 1px solid #e2e8f0;
-        flex-grow: 1;
-    }
-    
-    .company-info p {
-        margin: 0 0 10px 0;
-        font-size: 15px;
-        color: #475569;
-        display: flex;
-        align-items: center;
-    }
-    
-    .company-info p:last-child {
-        margin-bottom: 0;
-    }
-
-    .company-info strong {
-        font-weight: 600;
-        color: #1e293b;
-        min-width: 95px;
-        display: inline-block;
+      color: #475569;
+      line-height: 1.6;
     }
 
     .footer-cta {
@@ -163,74 +116,59 @@
       margin-top: 25px;
     }
     
-    .footer-cta p {
-      font-size: 18px;
-      font-style: italic;
-      color: #475569;
-      margin: 0;
+    .footer-cta span {
+      background-color: #1d4ed8;
+      color: #ffffff;
+      padding: 14px 28px;
+      border-radius: 10px;
+      font-size: 16px;
+      font-weight: 600;
+      display: inline-block;
     }
 
   </style>
 </head>
 <body>
   <div class="slide">
-    
     <div class="header-section">
-      <h1>Let's Start Your Digital Transformation</h1>
-      <p>Get in touch to begin your SME growth journey</p>
+      <h1>Let’s Talk About Your CRM Move</h1>
+      <p>Reach out when you are ready to tidy up your customer operations.</p>
     </div>
 
     <div class="main-content">
       <div class="left-column">
-        <div class="contact-grid">
-          <div class="contact-block">
-            <h2>Demo & Consultation</h2>
-            <p><strong>Schedule Live Demo:</strong>WhatsApp +65 88911968</p>
-            <p><strong>Message:</strong>"Interested in CRM"</p>
-            <p><strong>Free Consultation:</strong>Book a strategy session</p>
-          </div>
-          <div class="contact-block">
-            <h2>Direct Contact</h2>
-            <p><strong>WhatsApp:</strong>+65 88911968</p>
-            <p><strong>Email:</strong>hello@digital9labs.com</p>
-            <p><strong>Website:</strong>digital9labs.com</p>
-          </div>
+        <div class="contact-block">
+          <h2>Talk to Us</h2>
+          <p><strong>WhatsApp:</strong> +65 88911968 (message “CRM Inquiry”)</p>
+          <p><strong>Email:</strong> hello@digital9labs.com</p>
         </div>
-        <div class="contact-grid">
-          <div class="contact-block">
-            <h2>Support</h2>
-            <p><strong>Monday - Friday:</strong>8:00 AM - 8:00 PM EST</p>
-            <p><strong>Saturday:</strong>10:00 AM - 4:00 PM EST</p>
-            <p><strong>Emergency Support:</strong>24/7 available</p>
-          </div>
-          <div class="contact-block">
-            <h2>Company Info</h2>
-            <p><strong>Company:</strong>Digital9 Labs</p>
-            <p><strong>Website:</strong>digital9labs.com</p>
-            <p><strong>Experience:</strong>Professional CRM solutions</p>
-          </div>
+        <div class="contact-block">
+          <h2>When We’re Available</h2>
+          <p>We reply during business hours, Monday to Friday.</p>
+          <p>If you message outside these hours, we will follow up the next working day.</p>
+        </div>
+        <div class="contact-block">
+          <h2>What to Share</h2>
+          <p>- Team size and who will use the CRM<br>- Current tools or spreadsheets<br>- The biggest challenge you want to solve first</p>
         </div>
       </div>
+
       <div class="right-column">
-        <div class="image-container">
-          <img src="images/benefits_cloud_security_data_protection_business.jpg" alt="Benefits of Cloud Security for your business">
+        <div class="note-box">
+          Our calls stay practical: we load a portion of your data, walk through a typical day, and agree on the habits that keep the CRM accurate.
         </div>
-        <div class="value-statement">
-          <p>'Join hundreds of SMEs already transforming their business operations'</p>
-        </div>
-        <div class="company-info">
-            <p><strong>Company:</strong> Digital9 Labs</p>
-            <p><strong>Website:</strong> digital9labs.com</p>
-            <p><strong>Email:</strong> hello@digital9labs.com</p>
-            <p><strong>Support:</strong> Professional CRM solutions for SMEs</p>
+        <div class="workflow-box">
+          <strong>Typical Follow-Up</strong><br>
+          1. Intro chat to understand your workflow.<br>
+          2. Shared trial space with your sample data.<br>
+          3. Team training session and adoption check.
         </div>
       </div>
     </div>
 
     <div class="footer-cta">
-      <p>Your business transformation starts with a simple conversation</p>
+      <span>Your next organised quarter begins with a quick message.</span>
     </div>
-
   </div>
 </body>
 </html>

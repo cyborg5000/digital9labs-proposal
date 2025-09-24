@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=1280, height=720">
-  <title>Ready to Transform Your SME?</title>
+  <title>Next Steps</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap');
     body {
@@ -26,35 +26,21 @@
       padding: 40px 80px 0 80px;
     }
     .header {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
       width: 100%;
       margin-bottom: 40px;
+      text-align: center;
     }
-    .header-text h1 {
+    .header h1 {
       font-size: 52px;
       font-weight: 800;
-      color: #ea580c;
+      color: #1d4ed8;
       margin: 0;
       line-height: 1.2;
     }
-    .header-text p {
-      font-size: 18px;
-      color: #4b5563;
-      margin: 10px 0 0 0;
-    }
-    .partnership {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      font-size: 16px;
-      font-weight: 500;
-      color: #4b5563;
-      margin-top: 10px;
-    }
-    .partnership img {
-      height: 32px;
+    .header p {
+      font-size: 20px;
+      color: #475569;
+      margin: 12px 0 0 0;
     }
     .main-content {
       display: flex;
@@ -73,10 +59,9 @@
       align-items: flex-start;
       gap: 20px;
       padding: 20px;
-      border: 1px solid #e5e7eb;
       border-radius: 12px;
-      background-color: #f9fafb;
-      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+      background-color: #f8fafc;
+      box-shadow: 0 4px 10px rgba(29, 78, 216, 0.08);
     }
     .step-number {
       display: flex;
@@ -86,7 +71,7 @@
       height: 36px;
       min-width: 36px;
       border-radius: 50%;
-      background-color: #ea580c;
+      background-color: #1d4ed8;
       color: #ffffff;
       font-size: 20px;
       font-weight: 700;
@@ -94,12 +79,12 @@
     .step-details h3 {
       font-size: 18px;
       font-weight: 700;
-      color: #111827;
+      color: #0f172a;
       margin: 0 0 5px 0;
     }
     .step-details p {
       font-size: 15px;
-      color: #4b5563;
+      color: #475569;
       margin: 0;
       line-height: 1.5;
     }
@@ -109,18 +94,17 @@
       flex-direction: column;
     }
     .cta-box {
-      padding: 24px;
-      background-color: #fffbeb;
-      border: 1px solid #fde68a;
-      border-radius: 12px;
-      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.07), 0 4px 6px -4px rgba(0, 0, 0, 0.07);
+      padding: 26px;
+      background-color: #e0e7ff;
+      border-radius: 16px;
+      box-shadow: 0 12px 30px rgba(29, 78, 216, 0.12);
+      text-align: center;
     }
     .cta-box h2 {
-      font-size: 20px;
+      font-size: 24px;
       font-weight: 700;
-      text-align: center;
-      color: #1f2937;
-      margin: 0 0 20px 0;
+      color: #0f172a;
+      margin: 0 0 18px 0;
     }
     .cta-box ul {
       list-style: none;
@@ -129,87 +113,69 @@
       display: flex;
       flex-direction: column;
       gap: 12px;
+      text-align: left;
     }
     .cta-box li {
-      font-size: 16px;
-      color: #374151;
+      font-size: 15px;
+      color: #0f172a;
       display: flex;
-      align-items: center;
       gap: 10px;
+      align-items: flex-start;
     }
     .checkmark {
-      color: #059669;
+      color: #1d4ed8;
       font-weight: 700;
-      font-size: 20px;
+      font-size: 18px;
+      line-height: 1;
     }
     .cta-button {
       width: 100%;
       padding: 16px 0;
-      font-size: 20px;
+      font-size: 18px;
       font-weight: 700;
       color: #ffffff;
-      background-color: #ea580c;
+      background-color: #1d4ed8;
       border: none;
       border-radius: 8px;
       cursor: pointer;
-      box-shadow: 0 4px 14px 0 rgba(234, 88, 12, 0.39);
+      box-shadow: 0 4px 14px rgba(29, 78, 216, 0.35);
       transition: background-color 0.3s ease;
     }
     .cta-button:hover {
-      background-color: #d9510b;
+      background-color: #153eab;
     }
     .contact-info {
-      margin-top: 20px;
-      text-align: right;
-      font-size: 14px;
+      margin-top: 24px;
+      text-align: center;
+      font-size: 15px;
       line-height: 1.6;
-      color: #4b5563;
+      color: #475569;
     }
     .contact-info strong {
-        color: #1f2937;
+        color: #0f172a;
     }
     .footer-banner {
       display: flex;
       align-items: center;
       width: 1280px;
-      height: 50px;
+      height: 70px;
       position: absolute;
       bottom: 0;
       left: 0;
-      background-color: #1f2937;
-      color: #d1d5db;
-      font-size: 13px;
+      background-color: #0f172a;
+      color: #e2e8f0;
+      font-size: 15px;
       font-weight: 500;
-    }
-    .limited-tag {
-      background-color: #dc2626;
-      color: #ffffff;
-      padding: 0 20px;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      font-weight: 700;
-      margin-right: 30px;
-    }
-    .banner-content {
-      display: flex;
-      justify-content: space-between;
-      flex-grow: 1;
-      padding-right: 80px;
+      justify-content: center;
+      gap: 40px;
     }
   </style>
 </head>
 <body>
   <div class="slide-container">
     <div class="header">
-      <div class="header-text">
-        <h1>Ready to Transform Your SME?</h1>
-        <p>Take the first step toward business digitalization today</p>
-      </div>
-      <div class="partnership">
-        <img src="images/crm_presentation_8.jpg" alt="Partnership Handshake Icon">
-        <p>Partnership Handshake</p>
-      </div>
+      <h1>Ready to Run Everything from One CRM?</h1>
+      <p>Let’s replace spreadsheets with a shared, dependable workspace.</p>
     </div>
 
     <div class="main-content">
@@ -217,52 +183,45 @@
         <div class="step-card">
           <div class="step-number">1</div>
           <div class="step-details">
-            <h3>Sign Up (2 minutes)</h3>
-            <p>Quick registration with business details for instant platform access.</p>
+            <h3>Share Your Current Setup</h3>
+            <p>Send us the spreadsheets or tools you rely on today. We review them together.</p>
           </div>
         </div>
         <div class="step-card">
           <div class="step-number">2</div>
           <div class="step-details">
-            <h3>Schedule Onboarding (15 minutes)</h3>
-            <p>Personal demo and custom workflow configuration with our experts.</p>
+            <h3>See Your Data in the CRM</h3>
+            <p>Join a walkthrough using your own contacts and deals so the team can picture the switch.</p>
           </div>
         </div>
         <div class="step-card">
           <div class="step-number">3</div>
           <div class="step-details">
-            <h3>Start Growing (Day 1)</h3>
-            <p>Import your existing data and begin automating your critical business processes.</p>
+            <h3>Roll Out with Support</h3>
+            <p>We help you import, train, and review adoption so the habit sticks.</p>
           </div>
         </div>
       </div>
       <div class="cta-section">
         <div class="cta-box">
-          <h2>START YOUR FREE 30-DAY TRIAL</h2>
+          <h2>Pick Your Starting Point</h2>
           <ul>
-            <li><strong class="checkmark">✓</strong> No credit card required</li>
-            <li><strong class="checkmark">✓</strong> Full access to all features</li>
-            <li><strong class="checkmark">✓</strong> Personal onboarding session included</li>
+            <li><span class="checkmark">•</span>Book a live session to see the CRM using your real scenarios.</li>
+            <li><span class="checkmark">•</span>Request a guided trial workspace with sample data.</li>
+            <li><span class="checkmark">•</span>Ask for an implementation checklist tailored to your team.</li>
           </ul>
-          <button class="cta-button">Start Free Trial Now</button>
+          <button class="cta-button">Message Us to Begin</button>
         </div>
         <div class="contact-info">
-          <p><strong>Live Demo:</strong> Schedule a personal demonstration<br>
-          <strong>WhatsApp:</strong> +65 88911968<br>
-          <strong>Email:</strong> hello@digital9labs.com</p>
+          <p><strong>WhatsApp:</strong> +65 88911968</p>
+          <p><strong>Email:</strong> hello@digital9labs.com</p>
         </div>
       </div>
     </div>
   </div>
 
   <div class="footer-banner">
-    <div class="limited-tag">Limited Time</div>
-    <div class="banner-content">
-      <p>Free data migration (worth $500)</p>
-      <p>Join 500+ SMEs growing 40% faster</p>
-      <p>Average setup time: <strong>Just 3 days</strong></p>
-      <p>30-day money-back guarantee • Cancel anytime</p>
-    </div>
+    <span>Simple onboarding • Practical support • A CRM your team will actually use</span>
   </div>
 
 </body>

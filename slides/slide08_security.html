@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Enterprise-Grade Security & Reliability</title>
+  <title>Adoption & Support</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
     body {
@@ -36,12 +36,12 @@
     .header h1 {
       font-size: 48px;
       font-weight: 700;
-      color: #1e40af;
+      color: #0f172a;
       margin: 0;
     }
     .header p {
       font-size: 20px;
-      color: #6b7280;
+      color: #475569;
       margin-top: 10px;
     }
     .main-content {
@@ -50,164 +50,86 @@
       align-items: center;
       width: 100%;
       flex-grow: 1;
+      gap: 40px;
     }
-    .feature-column {
+    .column {
+      flex: 1;
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      gap: 40px;
-      width: 280px;
+      gap: 25px;
     }
-    .feature-item {
-      display: flex;
-      align-items: flex-start;
-      gap: 20px;
+    .card {
+      background-color: #f8fafc;
+      border-left: 4px solid #0ea5e9;
+      padding: 24px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(14, 165, 233, 0.08);
     }
-    .feature-icon {
-      flex-shrink: 0;
-      width: 48px;
-      height: 48px;
-      color: #1e40af;
-    }
-    .feature-text h3 {
-      font-size: 18px;
+    .card h3 {
+      font-size: 20px;
       font-weight: 700;
-      color: #111827;
-      margin: 0 0 5px 0;
+      color: #0f172a;
+      margin: 0 0 8px 0;
     }
-    .feature-text p {
-      font-size: 15px;
-      color: #6b7280;
+    .card p {
+      font-size: 16px;
+      color: #475569;
       margin: 0;
       line-height: 1.5;
     }
     .center-image {
-      width: 420px;
+      width: 380px;
       height: auto;
       border-radius: 16px;
       box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
     }
-    .footer-section {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 40px;
-    }
-    .trust-indicators {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 15px;
+    .footer {
       width: 100%;
-    }
-    .badge {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      background-color: #eef2ff;
-      border: 1px solid #dbeafe;
-      border-radius: 20px;
-      padding: 8px 16px;
-      font-size: 14px;
-      font-weight: 500;
-      color: #374151;
-    }
-    .badge-icon {
-      width: 16px;
-      height: 16px;
-      color: #22c55e;
-    }
-    .reliability-promise {
-      font-size: 18px;
-      font-weight: 700;
-      color: #1e40af;
+      margin-top: 40px;
+      padding: 20px;
+      background-color: #0ea5e9;
+      border-radius: 12px;
       text-align: center;
-      margin-top: 30px;
+      color: white;
+      font-size: 18px;
+      font-weight: 600;
     }
   </style>
 </head>
 <body>
   <div class="slide">
     <div class="header">
-      <h1>Enterprise-Grade Security & Reliability</h1>
-      <p>Your business data protected with bank-level security</p>
+      <h1>We Help Your Team Stick with It</h1>
+      <p>Simple guidance keeps everyone using the CRM the same way.</p>
     </div>
 
     <div class="main-content">
-      <div class="feature-column">
-        <div class="feature-item">
-          <svg class="feature-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
-          <div class="feature-text">
-            <h3>Data Encryption</h3>
-            <p>256-bit SSL encryption for all data</p>
-          </div>
+      <div class="column">
+        <div class="card">
+          <h3>Guided Onboarding</h3>
+          <p>Short working sessions help you import data, define stages, and agree on update habits.</p>
         </div>
-        <div class="feature-item">
-          <svg class="feature-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"></path></svg>
-          <div class="feature-text">
-            <h3>Cloud Infrastructure</h3>
-            <p>99.9% uptime guarantee</p>
-          </div>
-        </div>
-        <div class="feature-item">
-          <svg class="feature-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 4v5h5m-5.504 2.504A8 8 0 0112 4a8 8 0 018 8v1M4 11v1a8 8 0 0013.496 5.504M20 20v-5h-5"></path></svg>
-          <div class="feature-text">
-            <h3>Backup & Recovery</h3>
-            <p>Automated daily backups</p>
-          </div>
+        <div class="card">
+          <h3>Role-Based Playbooks</h3>
+          <p>Sales, operations, and finance each receive a one-page workflow so they know what to log.</p>
         </div>
       </div>
 
-      <img src="images/benefits_cloud_security_data_protection_business.jpg" alt="Cloud Security Benefits Diagram" class="center-image">
+      <img src="images/crm_presentation_1.svg" alt="Team collaborating around a CRM" class="center-image">
       
-      <div class="feature-column">
-        <div class="feature-item">
-          <svg class="feature-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0110.5-10.5"></path></svg>
-          <div class="feature-text">
-            <h3>Access Control</h3>
-            <p>Role-based permissions and 2FA</p>
-          </div>
+      <div class="column">
+        <div class="card">
+          <h3>Check-Ins & Refreshers</h3>
+          <p>Monthly reviews inside the CRM highlight gaps, celebrate clean data, and adjust the process.</p>
         </div>
-        <div class="feature-item">
-          <svg class="feature-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
-          <div class="feature-text">
-            <h3>Compliance</h3>
-            <p>GDPR, SOC 2, and industry standards</p>
-          </div>
-        </div>
-        <div class="feature-item">
-          <svg class="feature-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
-          <div class="feature-text">
-            <h3>Mobile Security</h3>
-            <p>Secure mobile app with biometric access</p>
-          </div>
+        <div class="card">
+          <h3>Responsive Support</h3>
+          <p>Reach the team by WhatsApp or email when you need quick answers or a short walkthrough.</p>
         </div>
       </div>
     </div>
 
-    <div class="footer-section">
-      <div class="trust-indicators">
-        <div class="badge">
-          <svg class="badge-icon" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-          ISO 27001 Certified
-        </div>
-        <div class="badge">
-          <svg class="badge-icon" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-          SOC 2 Type II Compliant
-        </div>
-        <div class="badge">
-          <svg class="badge-icon" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-          GDPR Ready
-        </div>
-        <div class="badge">
-          <svg class="badge-icon" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-          24/7 Security Monitoring
-        </div>
-      </div>
-      <p class="reliability-promise">Focus on growing your business while we protect your data</p>
-    </div>
+    <div class="footer">Adoption is a habit—not a project. We stay close until the CRM becomes second nature.</div>
   </div>
 </body>
 </html>

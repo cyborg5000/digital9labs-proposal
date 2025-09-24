@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Visual Sales Pipeline Management</title>
+    <title>Visual Pipeline Clarity</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
@@ -39,7 +39,6 @@
 
         .header p {
             font-size: 18px;
-            font-style: italic;
             color: #00796B;
             margin: 0;
         }
@@ -64,84 +63,44 @@
 
         .diagram-body {
             display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-grow: 1;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 40px;
         }
-        
+
         .column {
             display: flex;
             flex-direction: column;
-            align-items: center;
-            gap: 8px;
-            width: 42%;
-        }
-        
-        .column h3 {
-            font-size: 16px;
-            font-weight: 600;
-            padding: 6px 20px;
-            border: 1px solid #e0e0e0;
-            border-radius: 20px;
-            margin-bottom: 10px;
-            background-color: #f9f9f9;
+            gap: 12px;
         }
 
         .stage-item {
-            display: flex;
-            align-items: center;
-            border-radius: 10px;
-            padding: 8px 15px;
+            background-color: #14b8a6;
             color: white;
-            font-size: 14px;
+            padding: 12px 18px;
+            border-radius: 12px;
+            font-size: 15px;
             font-weight: 600;
-            box-sizing: border-box;
-            width: 100%;
-            height: 40px;
-        }
-        
-        .funnel-column .stage-item {
-            justify-content: flex-start;
-        }
-        
-        .pipeline-column .stage-item {
-            justify-content: center;
+            min-width: 240px;
+            box-shadow: 0 4px 12px rgba(20, 184, 166, 0.35);
         }
 
-        .stage-number {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 24px;
-            height: 24px;
-            flex-shrink: 0;
-            border-radius: 50%;
-            background-color: rgba(255, 255, 255, 0.2);
-            border: 1px solid rgba(255, 255, 255, 0.5);
-            font-size: 12px;
-            font-weight: 700;
-            margin-right: 12px;
+        .note-box {
+            background-color: #f0fdfa;
+            border-left: 4px solid #0f766e;
+            padding: 16px 20px;
+            border-radius: 12px;
+            max-width: 300px;
+            color: #0f172a;
+            font-size: 14px;
+            line-height: 1.4;
         }
-        
-        .connector-column {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            height: 240px;
-            width: 8%;
-        }
-        
-        .connector-line {
-            width: 100%;
-            height: 1px;
-            background-color: #cccccc;
-        }
-        
+
         .footer {
             display: flex;
             justify-content: space-between;
-            align-items: flex-end;
-            padding: 0 10px;
+            align-items: center;
+            gap: 30px;
         }
 
         .benefits-list {
@@ -173,104 +132,55 @@
             margin-top: 6px;
             flex-shrink: 0;
         }
-        
-        .benefits-list strong {
-            font-weight: 700;
-            color: #004D40;
-        }
 
-        .metric-box {
-            background-color: #006A5E;
+        .quote-box {
+            background-color: #0f766e;
             color: white;
             border-radius: 16px;
-            padding: 20px 25px;
-            text-align: center;
-            width: 240px;
-            box-shadow: 0 6px 15px rgba(0, 106, 94, 0.4);
+            padding: 24px 28px;
+            max-width: 300px;
+            font-size: 16px;
+            line-height: 1.5;
+            box-shadow: 0 6px 18px rgba(15, 118, 110, 0.35);
         }
-
-        .metric-box .metric-value {
-            font-size: 50px;
-            font-weight: 700;
-            margin: 0;
-            line-height: 1;
-        }
-
-        .metric-box .metric-label {
-            font-size: 14px;
-            margin: 5px 0 0 0;
-            line-height: 1.3;
-        }
-        
-        /* Stage Colors */
-        .c1 { background-color: #9b59b6; }
-        .c2 { background-color: #1abc9c; }
-        .c3 { background-color: #e74c3c; }
-        .c4 { background-color: #f39c12; }
-        .c5 { background-color: #3498db; }
-
-        /* Funnel width simulation */
-        .funnel-column .w1 { max-width: 320px; }
-        .funnel-column .w2 { max-width: 290px; }
-        .funnel-column .w3 { max-width: 260px; }
-        .funnel-column .w4 { max-width: 230px; }
-        .funnel-column .w5 { max-width: 200px; }
-        
-        .pipeline-column .stage-item {
-            max-width: 320px;
-        }
-        
     </style>
 </head>
 <body>
     <div class="slide">
         <div class="header">
-            <h1>Visual Sales Pipeline Management</h1>
-            <p>'From prospect identification to closed deals - manage your entire sales journey visually'</p>
+            <h1>See Your Pipeline at a Glance</h1>
+            <p>Move deals forward without rebuilding spreadsheets every week.</p>
         </div>
 
         <div class="diagram-container">
-            <h2>Difference Between Sales Pipeline And Funnel</h2>
+            <h2>Simple Stages the Whole Team Understands</h2>
             <div class="diagram-body">
-                <div class="column funnel-column">
-                    <h3>Sales Funnel</h3>
-                    <div class="stage-item c1 w1"><div class="stage-number">01</div>Awareness</div>
-                    <div class="stage-item c2 w2"><div class="stage-number">02</div>Interest</div>
-                    <div class="stage-item c3 w3"><div class="stage-number">03</div>Intent</div>
-                    <div class="stage-item c4 w4"><div class="stage-number">04</div>Evaluation</div>
-                    <div class="stage-item c5 w5"><div class="stage-number">05</div>Purchase</div>
+                <div class="column">
+                    <div class="stage-item">New Conversation</div>
+                    <div class="note-box">Log the enquiry, capture key details, assign an owner.</div>
                 </div>
-
-                <div class="connector-column">
-                    <div class="connector-line"></div>
-                    <div class="connector-line"></div>
-                    <div class="connector-line"></div>
-                    <div class="connector-line"></div>
-                    <div class="connector-line"></div>
+                <div class="column">
+                    <div class="stage-item">Active Opportunity</div>
+                    <div class="note-box">Track meetings, notes, and next steps in one timeline.</div>
                 </div>
-
-                <div class="column pipeline-column">
-                    <h3>Sales Pipeline</h3>
-                    <div class="stage-item c1">Prospecting</div>
-                    <div class="stage-item c2">Qualification</div>
-                    <div class="stage-item c3">Meeting or Demo</div>
-                    <div class="stage-item c4">Proposal and Negotiation</div>
-                    <div class="stage-item c5">Close</div>
+                <div class="column">
+                    <div class="stage-item">Ready to Close</div>
+                    <div class="note-box">Confirm pricing, attach the proposal, set the invoicing plan.</div>
+                </div>
+                <div class="column">
+                    <div class="stage-item">Won & Handover</div>
+                    <div class="note-box">Flag what finance and delivery need so nothing is missed.</div>
                 </div>
             </div>
         </div>
 
         <div class="footer">
             <ul class="benefits-list">
-                <li><div class="bullet"></div><div><strong>Clear Stage Tracking</strong> - Know exactly where each lead stands</div></li>
-                <li><div class="bullet"></div><div><strong>Automated Progression</strong> - Move leads through stages automatically</div></li>
-                <li><div class="bullet"></div><div><strong>Conversion Insights</strong> - Track conversion rates at each stage</div></li>
-                <li><div class="bullet"></div><div><strong>Revenue Forecasting</strong> - Predict future sales with accuracy</div></li>
+                <li><div class="bullet"></div><div><strong>Instant clarity</strong> – see what is moving and what needs attention.</div></li>
+                <li><div class="bullet"></div><div><strong>Shared accountability</strong> – everyone knows who owns the next step.</div></li>
+                <li><div class="bullet"></div><div><strong>Easy reporting</strong> – export the view when leadership needs an update.</div></li>
             </ul>
-            <div class="metric-box">
-                <p class="metric-value">35%</p>
-                <p class="metric-label">Average improvement in sales cycle efficiency</p>
-            </div>
+            <div class="quote-box">“Our weekly pipeline meeting now starts inside the CRM. No more chasing last-minute spreadsheet updates.”</div>
         </div>
     </div>
 </body>
